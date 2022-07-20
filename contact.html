@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="fontawesome-free-5.7.2-web 2/css/all.css" />
+          <link rel="stylesheet" href="styles.css" />
+        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <body>
+
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#">Taha Shahzad</a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="favTourist.html">favTourist</a></li>
+          <li><a href="favCities.html">favCities</a></li>
+          <li><a href="FavPersonalities.html">FavPersonalities</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    
+    
+    
+    </body>
+    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="contact container">
+
+  <article class="contact-info">
+
+    <!-- contact item -->
+    <div class="contact-item">
+      <h3 class="contact-title">
+       name
+      </h3>
+      <h3 class="contact-text">
+        Taha Shahzad      </h3>
+    </div>
+    <!--end of  contact item -->
+    <!-- contact item -->
+    <div class="contact-item">
+      <h3 class="contact-title">
+        <span class="contact-icon"><i class="fas fa-envelope"></i></span
+        >email
+      </h3>
+      <h3 class="contact-text">F2019266089@umt.edu.pk</h3>
+    </div>
+    <!--end of  contact item -->
+    <!-- contact item -->
+    <div class="contact-item">
+      <h3 class="contact-title">
+        <span class="contact-icon"><i class="fas fa-phone"></i></span
+        >phone
+      </h3>
+      <h3 class="contact-text">03214731328</h3>
+    </div>
+    <!--end of  contact item -->
+  </article>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+<footer class="footer">
+  <div class="section-center">
+    <div class="social-icons">
+      <!-- social icon -->
+      <a href="#" class="social-icon">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <!-- end of social icon -->
+      <!-- social icon -->
+      <a href="#" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <!-- end of social icon -->
+      <!-- social icon -->
+      <a href="#" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <!-- end of social icon -->
+    </div>
+    
+  </div>
+</footer>
+ 
+<script>
+  const body = document.querySelector("body");
+  const navbar = document.querySelector(".navbar");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
+  }
+  cancelBtn.onclick = ()=>{
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+</body>
+</html>
